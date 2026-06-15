@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain-Based Expense Tracking System</title>
+    <meta name="description" content="A blockchain-based expense tracking system powered by simulated Hyperledger Fabric">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Floating Background Particles -->
+    <div class="bg-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                        <line x1="1" y1="10" x2="23" y2="10"></line>
+                    </svg>
+                </div>
+                <div>
+                    <h1>Blockchain-Based Expense Tracking System</h1>
+                    <p class="subtitle">Powered by Simulated Hyperledger Fabric</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('create-tab', this)">Create Expense</button>
+            <button class="tab-btn" onclick="switchTab('update-tab', this)">Update Expense</button>
+            <button class="tab-btn" onclick="switchTab('delete-tab', this)">Delete Expense</button>
+            <button class="tab-btn" onclick="switchTab('query-tab', this)">Query / Search</button>
+        </div>
+
+        <!-- Create Expense Tab -->
+        <div id="create-tab" class="tab-content active">
+            <div class="card glass-card">
+                <div class="card-header">
+                    <div class="card-icon create-icon">＋</div>
+                    <h2>Create Expense</h2>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="c_id">Expense ID</label>
+                        <input type="text" id="c_id" placeholder="e.g., EXP-20260611-0001">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="c_amount">Amount (RM)</label>
+                            <input type="number" id="c_amount" placeholder="e.g., 45.50" step="0.01">
+                        </div>
+                        <div class="form-group">
+                            <label for="c_category">Category</label>
+                            <select id="c_category">
+                                <option value="">Select Category</option>
+                                <option value="Food & Dining">Food & Dining</option>
+                                <option value="Transportation">Transportation</option>
+                                <option value="Utilities">Utilities</option>
+                                <option value="Office Supplies">Office Supplies</option>
+                                <option value="Entertainment">Entertainment</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="c_desc">Description</label>
+                        <input type="text" id="c_desc" placeholder="e.g., Team lunch at restaurant">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="c_date">Date</label>
+                            <input type="date" id="c_date">
+                        </div>
+                        <div class="form-group">
+                            <label for="c_creator">Created By</label>
+                            <input type="text" id="c_creator" placeholder="Enter User ID">
+                        </div>
+                    </div>
+                    <button class="btn btn-create" onclick="createExpense()">Submit to Blockchain</button>
+                    <div id="create_msg" class="msg-box"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Update Expense Tab -->
+        <div id="update-tab" class="tab-content">
+            <div class="card glass-card">
+                <div class="card-header">
+                    <div class="card-icon update-icon">✎</div>
+                    <h2>Update Expense</h2>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="u_id">Expense ID</label>
+                        <input type="text" id="u_id" placeholder="Enter Expense ID to update">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="u_amount">New Amount (RM)</label>
+                            <input type="number" id="u_amount" placeholder="Optional" step="0.01">
+                        </div>
+                        <div class="form-group">
+                            <label for="u_category">New Category</label>
+                            <select id="u_category">
+                                <option value="">Keep Current</option>
+                                <option value="Food & Dining">Food & Dining</option>
+                                <option value="Transportation">Transportation</option>
+                                <option value="Utilities">Utilities</option>
+                                <option value="Office Supplies">Office Supplies</option>
+                                <option value="Entertainment">Entertainment</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="u_desc">New Description</label>
+                        <input type="text" id="u_desc" placeholder="Optional">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="u_date">New Date</label>
+                            <input type="date" id="u_date">
+                        </div>
+                        <div class="form-group">
+                            <label for="u_updater">Updated By</label>
+                            <input type="text" id="u_updater" placeholder="Enter User ID">
+                        </div>
+                    </div>
+                    <button class="btn btn-update" onclick="updateExpense()">Update on Blockchain</button>
+                    <div id="update_msg" class="msg-box"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Expense Tab -->
+        <div id="delete-tab" class="tab-content">
+            <div class="card glass-card">
+                <div class="card-header">
+                    <div class="card-icon cancel-icon">✕</div>
+                    <h2>Delete Expense</h2>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="del_id">Expense ID</label>
+                        <input type="text" id="del_id" placeholder="Enter Expense ID to delete">
+                    </div>
+                    <div class="form-group">
+                        <label for="del_user">Deleted By</label>
+                        <input type="text" id="del_user" placeholder="Enter User ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="del_reason">Deletion Reason</label>
+                        <input type="text" id="del_reason" placeholder="e.g., Duplicate entry">
+                    </div>
+                    <button class="btn btn-cancel" onclick="deleteExpense()">Delete Expense</button>
+                    <div id="delete_msg" class="msg-box"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Query Expense Tab -->
+        <div id="query-tab" class="tab-content">
+            <div class="card glass-card">
+                <div class="card-header">
+                    <div class="card-icon query-icon">⌕</div>
+                    <h2>Query / Search Expense</h2>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="q_id">Expense ID</label>
+                        <input type="text" id="q_id" placeholder="Enter Expense ID or leave blank for all">
+                    </div>
+                    <button class="btn btn-query" onclick="queryExpense()">Search Ledger</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 3: Status / Output Panel -->
+        <div class="card-row full-width">
+            <div class="card glass-card">
+                <div class="card-header">
+                    <div class="card-icon log-icon">⛓</div>
+                    <h2>Status / Output</h2>
+
+                </div>
+                <div class="card-body">
+                    <pre id="output">System Ready...</pre>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

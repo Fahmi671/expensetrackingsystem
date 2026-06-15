@@ -1,0 +1,236 @@
+{
+  "worldState": {
+    "user001": {
+      "userId": "user001",
+      "fullName": "Amar bin Abdullah",
+      "email": "amar@gmail.com",
+      "role": "CREATOR",
+      "enrolledDate": "2025-01-15",
+      "department": "IT Department"
+    },
+    "manager001": {
+      "userId": "manager001",
+      "fullName": "Amir bin Firdaus",
+      "email": "amir@gmail.com",
+      "role": "MANAGER",
+      "enrolledDate": "2025-01-10",
+      "department": "Finance"
+    },
+    "auditor001": {
+      "userId": "auditor001",
+      "fullName": "Razali bin Hassan",
+      "email": "razali@gmail.com",
+      "role": "AUDITOR",
+      "enrolledDate": "2025-02-01",
+      "department": "Audit"
+    },
+    "EXP-20260101-0001": {
+      "expenseId": "EXP-20260101-0001",
+      "amount": 150,
+      "category": "Food & Dining",
+      "description": "Team lunch at Nasi Kandar + dessert",
+      "date": "2026-01-01",
+      "createdBy": "user001",
+      "timestamp": "2026-06-13T18:55:39.057Z",
+      "status": "ACTIVE",
+      "lastUpdateBy": "manager001",
+      "lastUpdateTimestamp": "2026-06-13T18:55:39.077Z"
+    },
+    "EXP-20260102-0002": {
+      "expenseId": "EXP-20260102-0002",
+      "amount": 85,
+      "category": "Transportation",
+      "description": "Grab ride to client site meeting",
+      "date": "2026-01-02",
+      "createdBy": "manager001",
+      "timestamp": "2026-06-13T18:55:39.061Z",
+      "status": "DELETED",
+      "deletedBy": "manager001",
+      "deletionReason": "Duplicate entry — expense was submitted twice by mistake",
+      "deletionTimestamp": "2026-06-13T18:55:39.082Z"
+    },
+    "EXP-20260614-001": {
+      "expenseId": "EXP-20260614-001",
+      "amount": 60,
+      "category": "Transportation",
+      "description": "Grab for site visit",
+      "date": "2026-06-13",
+      "createdBy": "user001",
+      "timestamp": "2026-06-13T19:06:02.113Z",
+      "status": "DELETED",
+      "lastUpdateBy": "manager001",
+      "lastUpdateTimestamp": "2026-06-13T19:09:03.479Z",
+      "deletedBy": "manager001",
+      "deletionReason": "False information",
+      "deletionTimestamp": "2026-06-13T19:11:45.493Z"
+    }
+  },
+  "transactions": [
+    {
+      "transactionId": "tx_1781376939048_476",
+      "timestamp": "2026-06-13T18:55:39.048Z",
+      "assetId": "user001",
+      "action": "user",
+      "assetState": {
+        "userId": "user001",
+        "fullName": "Amar bin Abdullah",
+        "email": "amar@gmail.com",
+        "role": "CREATOR",
+        "enrolledDate": "2025-01-15",
+        "department": "IT Department"
+      }
+    },
+    {
+      "transactionId": "tx_1781376939052_701",
+      "timestamp": "2026-06-13T18:55:39.052Z",
+      "assetId": "manager001",
+      "action": "user",
+      "assetState": {
+        "userId": "manager001",
+        "fullName": "Amir bin Firdaus",
+        "email": "amir@gmail.com",
+        "role": "MANAGER",
+        "enrolledDate": "2025-01-10",
+        "department": "Finance"
+      }
+    },
+    {
+      "transactionId": "tx_1781376939054_790",
+      "timestamp": "2026-06-13T18:55:39.054Z",
+      "assetId": "auditor001",
+      "action": "user",
+      "assetState": {
+        "userId": "auditor001",
+        "fullName": "Razali bin Hassan",
+        "email": "razali@gmail.com",
+        "role": "AUDITOR",
+        "enrolledDate": "2025-02-01",
+        "department": "Audit"
+      }
+    },
+    {
+      "transactionId": "tx_1781376939057_446",
+      "timestamp": "2026-06-13T18:55:39.057Z",
+      "assetId": "EXP-20260101-0001",
+      "action": "expense",
+      "assetState": {
+        "expenseId": "EXP-20260101-0001",
+        "amount": 120.5,
+        "category": "Food & Dining",
+        "description": "Team lunch at Nasi Kandar restaurant",
+        "date": "2026-01-01",
+        "createdBy": "user001",
+        "timestamp": "2026-06-13T18:55:39.057Z",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "transactionId": "tx_1781376939061_8",
+      "timestamp": "2026-06-13T18:55:39.061Z",
+      "assetId": "EXP-20260102-0002",
+      "action": "expense",
+      "assetState": {
+        "expenseId": "EXP-20260102-0002",
+        "amount": 85,
+        "category": "Transportation",
+        "description": "Grab ride to client site meeting",
+        "date": "2026-01-02",
+        "createdBy": "manager001",
+        "timestamp": "2026-06-13T18:55:39.061Z",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "transactionId": "tx_1781376939077_274",
+      "timestamp": "2026-06-13T18:55:39.077Z",
+      "assetId": "EXP-20260101-0001",
+      "action": "expense",
+      "assetState": {
+        "expenseId": "EXP-20260101-0001",
+        "amount": 150,
+        "category": "Food & Dining",
+        "description": "Team lunch at Nasi Kandar + dessert",
+        "date": "2026-01-01",
+        "createdBy": "user001",
+        "timestamp": "2026-06-13T18:55:39.057Z",
+        "status": "ACTIVE",
+        "lastUpdateBy": "manager001",
+        "lastUpdateTimestamp": "2026-06-13T18:55:39.077Z"
+      }
+    },
+    {
+      "transactionId": "tx_1781376939082_392",
+      "timestamp": "2026-06-13T18:55:39.082Z",
+      "assetId": "EXP-20260102-0002",
+      "action": "expense",
+      "assetState": {
+        "expenseId": "EXP-20260102-0002",
+        "amount": 85,
+        "category": "Transportation",
+        "description": "Grab ride to client site meeting",
+        "date": "2026-01-02",
+        "createdBy": "manager001",
+        "timestamp": "2026-06-13T18:55:39.061Z",
+        "status": "DELETED",
+        "deletedBy": "manager001",
+        "deletionReason": "Duplicate entry — expense was submitted twice by mistake",
+        "deletionTimestamp": "2026-06-13T18:55:39.082Z"
+      }
+    },
+    {
+      "transactionId": "tx_1781377562116_708",
+      "timestamp": "2026-06-13T19:06:02.116Z",
+      "assetId": "EXP-20260614-001",
+      "action": "expense",
+      "assetState": {
+        "expenseId": "EXP-20260614-001",
+        "amount": 50,
+        "category": "Transportation",
+        "description": "Grab for site visit",
+        "date": "2026-06-13",
+        "createdBy": "user001",
+        "timestamp": "2026-06-13T19:06:02.113Z",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "transactionId": "tx_1781377743479_635",
+      "timestamp": "2026-06-13T19:09:03.479Z",
+      "assetId": "EXP-20260614-001",
+      "action": "expense",
+      "assetState": {
+        "expenseId": "EXP-20260614-001",
+        "amount": 60,
+        "category": "Transportation",
+        "description": "Grab for site visit",
+        "date": "2026-06-13",
+        "createdBy": "user001",
+        "timestamp": "2026-06-13T19:06:02.113Z",
+        "status": "ACTIVE",
+        "lastUpdateBy": "manager001",
+        "lastUpdateTimestamp": "2026-06-13T19:09:03.479Z"
+      }
+    },
+    {
+      "transactionId": "tx_1781377905493_452",
+      "timestamp": "2026-06-13T19:11:45.493Z",
+      "assetId": "EXP-20260614-001",
+      "action": "expense",
+      "assetState": {
+        "expenseId": "EXP-20260614-001",
+        "amount": 60,
+        "category": "Transportation",
+        "description": "Grab for site visit",
+        "date": "2026-06-13",
+        "createdBy": "user001",
+        "timestamp": "2026-06-13T19:06:02.113Z",
+        "status": "DELETED",
+        "lastUpdateBy": "manager001",
+        "lastUpdateTimestamp": "2026-06-13T19:09:03.479Z",
+        "deletedBy": "manager001",
+        "deletionReason": "False information",
+        "deletionTimestamp": "2026-06-13T19:11:45.493Z"
+      }
+    }
+  ]
+}
