@@ -46,7 +46,7 @@ class SimulatedStub {
             assetState: state
         });
 
-        this._writeLedger(ledge);
+        this._writeLedger(ledger);
     }
 
     async getStateByRange(startKey, endKey) {

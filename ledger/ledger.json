@@ -31,10 +31,10 @@
       "description": "Team lunch at Nasi Kandar + dessert",
       "date": "2026-01-01",
       "createdBy": "user001",
-      "timestamp": "2026-06-13T18:55:39.057Z",
+      "timestamp": "2026-06-16T00:56:57.231Z",
       "status": "ACTIVE",
       "lastUpdateBy": "manager001",
-      "lastUpdateTimestamp": "2026-06-13T18:55:39.077Z"
+      "lastUpdateTimestamp": "2026-06-16T00:56:57.253Z"
     },
     "EXP-20260102-0002": {
       "expenseId": "EXP-20260102-0002",
@@ -43,32 +43,47 @@
       "description": "Grab ride to client site meeting",
       "date": "2026-01-02",
       "createdBy": "manager001",
-      "timestamp": "2026-06-13T18:55:39.061Z",
+      "timestamp": "2026-06-16T00:56:57.235Z",
       "status": "DELETED",
       "deletedBy": "manager001",
       "deletionReason": "Duplicate entry — expense was submitted twice by mistake",
-      "deletionTimestamp": "2026-06-13T18:55:39.082Z"
+      "deletionTimestamp": "2026-06-16T00:56:57.259Z"
     },
-    "EXP-20260614-001": {
-      "expenseId": "EXP-20260614-001",
-      "amount": 60,
+    "EXP-20260614-003": {
+      "expenseId": "EXP-20260614-003",
+      "amount": 40,
       "category": "Transportation",
-      "description": "Grab for site visit",
-      "date": "2026-06-13",
+      "description": "Grab",
+      "date": "2026-06-10",
       "createdBy": "user001",
-      "timestamp": "2026-06-13T19:06:02.113Z",
+      "timestamp": "2026-06-16T00:59:41.172Z",
       "status": "DELETED",
       "lastUpdateBy": "manager001",
-      "lastUpdateTimestamp": "2026-06-13T19:09:03.479Z",
+      "lastUpdateTimestamp": "2026-06-16T01:00:03.063Z",
       "deletedBy": "manager001",
-      "deletionReason": "False information",
-      "deletionTimestamp": "2026-06-13T19:11:45.493Z"
+      "deletionReason": "false information",
+      "deletionTimestamp": "2026-06-16T01:00:35.317Z"
+    },
+    "EXP-20260614-005": {
+      "expenseId": "EXP-20260614-005",
+      "amount": 50,
+      "category": "Transportation",
+      "description": "Grab",
+      "date": "2026-06-15",
+      "createdBy": "user001",
+      "timestamp": "2026-06-16T01:09:59.185Z",
+      "status": "DELETED",
+      "lastUpdateBy": "manager001",
+      "lastUpdateTimestamp": "2026-06-16T01:10:47.606Z",
+      "deletedBy": "manager001",
+      "deletionReason": "false information",
+      "deletionTimestamp": "2026-06-16T01:11:09.182Z"
     }
   },
   "transactions": [
     {
-      "transactionId": "tx_1781376939048_476",
-      "timestamp": "2026-06-13T18:55:39.048Z",
+      "transactionId": "tx_1781571417222_636",
+      "timestamp": "2026-06-16T00:56:57.222Z",
       "assetId": "user001",
       "action": "user",
       "assetState": {
@@ -81,8 +96,8 @@
       }
     },
     {
-      "transactionId": "tx_1781376939052_701",
-      "timestamp": "2026-06-13T18:55:39.052Z",
+      "transactionId": "tx_1781571417226_462",
+      "timestamp": "2026-06-16T00:56:57.226Z",
       "assetId": "manager001",
       "action": "user",
       "assetState": {
@@ -95,8 +110,8 @@
       }
     },
     {
-      "transactionId": "tx_1781376939054_790",
-      "timestamp": "2026-06-13T18:55:39.054Z",
+      "transactionId": "tx_1781571417228_112",
+      "timestamp": "2026-06-16T00:56:57.228Z",
       "assetId": "auditor001",
       "action": "user",
       "assetState": {
@@ -109,8 +124,8 @@
       }
     },
     {
-      "transactionId": "tx_1781376939057_446",
-      "timestamp": "2026-06-13T18:55:39.057Z",
+      "transactionId": "tx_1781571417232_883",
+      "timestamp": "2026-06-16T00:56:57.232Z",
       "assetId": "EXP-20260101-0001",
       "action": "expense",
       "assetState": {
@@ -120,13 +135,13 @@
         "description": "Team lunch at Nasi Kandar restaurant",
         "date": "2026-01-01",
         "createdBy": "user001",
-        "timestamp": "2026-06-13T18:55:39.057Z",
+        "timestamp": "2026-06-16T00:56:57.231Z",
         "status": "ACTIVE"
       }
     },
     {
-      "transactionId": "tx_1781376939061_8",
-      "timestamp": "2026-06-13T18:55:39.061Z",
+      "transactionId": "tx_1781571417236_336",
+      "timestamp": "2026-06-16T00:56:57.236Z",
       "assetId": "EXP-20260102-0002",
       "action": "expense",
       "assetState": {
@@ -136,13 +151,13 @@
         "description": "Grab ride to client site meeting",
         "date": "2026-01-02",
         "createdBy": "manager001",
-        "timestamp": "2026-06-13T18:55:39.061Z",
+        "timestamp": "2026-06-16T00:56:57.235Z",
         "status": "ACTIVE"
       }
     },
     {
-      "transactionId": "tx_1781376939077_274",
-      "timestamp": "2026-06-13T18:55:39.077Z",
+      "transactionId": "tx_1781571417253_824",
+      "timestamp": "2026-06-16T00:56:57.253Z",
       "assetId": "EXP-20260101-0001",
       "action": "expense",
       "assetState": {
@@ -152,15 +167,15 @@
         "description": "Team lunch at Nasi Kandar + dessert",
         "date": "2026-01-01",
         "createdBy": "user001",
-        "timestamp": "2026-06-13T18:55:39.057Z",
+        "timestamp": "2026-06-16T00:56:57.231Z",
         "status": "ACTIVE",
         "lastUpdateBy": "manager001",
-        "lastUpdateTimestamp": "2026-06-13T18:55:39.077Z"
+        "lastUpdateTimestamp": "2026-06-16T00:56:57.253Z"
       }
     },
     {
-      "transactionId": "tx_1781376939082_392",
-      "timestamp": "2026-06-13T18:55:39.082Z",
+      "transactionId": "tx_1781571417259_248",
+      "timestamp": "2026-06-16T00:56:57.259Z",
       "assetId": "EXP-20260102-0002",
       "action": "expense",
       "assetState": {
@@ -170,66 +185,121 @@
         "description": "Grab ride to client site meeting",
         "date": "2026-01-02",
         "createdBy": "manager001",
-        "timestamp": "2026-06-13T18:55:39.061Z",
+        "timestamp": "2026-06-16T00:56:57.235Z",
         "status": "DELETED",
         "deletedBy": "manager001",
         "deletionReason": "Duplicate entry — expense was submitted twice by mistake",
-        "deletionTimestamp": "2026-06-13T18:55:39.082Z"
+        "deletionTimestamp": "2026-06-16T00:56:57.259Z"
       }
     },
     {
-      "transactionId": "tx_1781377562116_708",
-      "timestamp": "2026-06-13T19:06:02.116Z",
-      "assetId": "EXP-20260614-001",
+      "transactionId": "tx_1781571581181_343",
+      "timestamp": "2026-06-16T00:59:41.181Z",
+      "assetId": "EXP-20260614-003",
       "action": "expense",
       "assetState": {
-        "expenseId": "EXP-20260614-001",
+        "expenseId": "EXP-20260614-003",
         "amount": 50,
         "category": "Transportation",
-        "description": "Grab for site visit",
-        "date": "2026-06-13",
+        "description": "Grab",
+        "date": "2026-06-10",
         "createdBy": "user001",
-        "timestamp": "2026-06-13T19:06:02.113Z",
+        "timestamp": "2026-06-16T00:59:41.172Z",
         "status": "ACTIVE"
       }
     },
     {
-      "transactionId": "tx_1781377743479_635",
-      "timestamp": "2026-06-13T19:09:03.479Z",
-      "assetId": "EXP-20260614-001",
+      "transactionId": "tx_1781571603065_330",
+      "timestamp": "2026-06-16T01:00:03.065Z",
+      "assetId": "EXP-20260614-003",
       "action": "expense",
       "assetState": {
-        "expenseId": "EXP-20260614-001",
-        "amount": 60,
+        "expenseId": "EXP-20260614-003",
+        "amount": 40,
         "category": "Transportation",
-        "description": "Grab for site visit",
-        "date": "2026-06-13",
+        "description": "Grab",
+        "date": "2026-06-10",
         "createdBy": "user001",
-        "timestamp": "2026-06-13T19:06:02.113Z",
+        "timestamp": "2026-06-16T00:59:41.172Z",
         "status": "ACTIVE",
         "lastUpdateBy": "manager001",
-        "lastUpdateTimestamp": "2026-06-13T19:09:03.479Z"
+        "lastUpdateTimestamp": "2026-06-16T01:00:03.063Z"
       }
     },
     {
-      "transactionId": "tx_1781377905493_452",
-      "timestamp": "2026-06-13T19:11:45.493Z",
-      "assetId": "EXP-20260614-001",
+      "transactionId": "tx_1781571635318_514",
+      "timestamp": "2026-06-16T01:00:35.318Z",
+      "assetId": "EXP-20260614-003",
       "action": "expense",
       "assetState": {
-        "expenseId": "EXP-20260614-001",
-        "amount": 60,
+        "expenseId": "EXP-20260614-003",
+        "amount": 40,
         "category": "Transportation",
-        "description": "Grab for site visit",
-        "date": "2026-06-13",
+        "description": "Grab",
+        "date": "2026-06-10",
         "createdBy": "user001",
-        "timestamp": "2026-06-13T19:06:02.113Z",
+        "timestamp": "2026-06-16T00:59:41.172Z",
         "status": "DELETED",
         "lastUpdateBy": "manager001",
-        "lastUpdateTimestamp": "2026-06-13T19:09:03.479Z",
+        "lastUpdateTimestamp": "2026-06-16T01:00:03.063Z",
         "deletedBy": "manager001",
-        "deletionReason": "False information",
-        "deletionTimestamp": "2026-06-13T19:11:45.493Z"
+        "deletionReason": "false information",
+        "deletionTimestamp": "2026-06-16T01:00:35.317Z"
+      }
+    },
+    {
+      "transactionId": "tx_1781572199186_751",
+      "timestamp": "2026-06-16T01:09:59.186Z",
+      "assetId": "EXP-20260614-005",
+      "action": "expense",
+      "assetState": {
+        "expenseId": "EXP-20260614-005",
+        "amount": 40,
+        "category": "Transportation",
+        "description": "Grab",
+        "date": "2026-06-15",
+        "createdBy": "user001",
+        "timestamp": "2026-06-16T01:09:59.185Z",
+        "status": "ACTIVE"
+      }
+    },
+    {
+      "transactionId": "tx_1781572247607_272",
+      "timestamp": "2026-06-16T01:10:47.607Z",
+      "assetId": "EXP-20260614-005",
+      "action": "expense",
+      "assetState": {
+        "expenseId": "EXP-20260614-005",
+        "amount": 50,
+        "category": "Transportation",
+        "description": "Grab",
+        "date": "2026-06-15",
+        "createdBy": "user001",
+        "timestamp": "2026-06-16T01:09:59.185Z",
+        "status": "ACTIVE",
+        "lastUpdateBy": "manager001",
+        "lastUpdateTimestamp": "2026-06-16T01:10:47.606Z"
+      }
+    },
+    {
+      "transactionId": "tx_1781572269182_622",
+      "timestamp": "2026-06-16T01:11:09.183Z",
+      "assetId": "EXP-20260614-005",
+      "action": "expense",
+      "assetState": {
+        "expenseId": "EXP-20260614-005",
+        "amount": 50,
+        "category": "Transportation",
+        "description": "Grab",
+        "date": "2026-06-15",
+        "createdBy": "user001",
+        "timestamp": "2026-06-16T01:09:59.185Z",
+        "status": "DELETED",
+        "lastUpdateBy": "manager001",
+        "lastUpdateTimestamp": "2026-06-16T01:10:47.606Z",
+        "deletedBy": "manager001",
+        "deletionReason": "false information",
+        "deletionTimestamp": "2026-06-16T01:11:09.182Z"
       }
     }
   ]
